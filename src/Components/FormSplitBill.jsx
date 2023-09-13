@@ -22,7 +22,7 @@ export default function FormSplitBill({ selectedFriend, onSplitBill }) {
       <input
         value={bill}
         onChange={(e) => setBill(Number(e.target.value))}
-        type="text"
+        type="number"
       />
 
       <label>💰 Your expense</label>
@@ -33,7 +33,7 @@ export default function FormSplitBill({ selectedFriend, onSplitBill }) {
             Number(e.target.value) > bill ? paidByUser : Number(e.target.value)
           )
         }
-        type="text"
+        type="number"
       />
 
       <label>👭 {selectedFriend.name}'s expense</label>
